@@ -1,0 +1,61 @@
+.view {
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+.dropdown {
+  width: 200px;
+}
+.linkDiv {
+  width: 80%;
+}
+.link {
+  color: black;
+  font-weight: bold;
+  float: right;
+}
+
+.newemp {
+  width: 50%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+.deleteButton {
+  width: 30%;
+}
+
+.dropdown {
+  width: 80%;
+}
+.deleteAnchor {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-hourglass-half {
+  color: navy;
+  font-size: 18px;
+}
+
+.fa-frown {
+  color: navy;
+  font-size: 18px;
+}
+.rightDiv {
+  float: right;
+  width: 30%;
+}
+.paddingDiv {
+  padding-bottom: 5px;
+}
+
+.ag-overlay-loading-center {
+  border: solid 1px;
+  border-color: #babfc7;
+  border-color: var(--ag-border-color, #babfc7);
+  background: #fff;
+  background: var(--ag-background-color, #fff);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 1px rgba(186, 191, 199, 0.4);
+  padding: 6px;
+}

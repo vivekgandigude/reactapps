@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "devStart": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14",
+    "pkg": "^5.4.0",
+    "serverless": "^2.72.0",
+    "serverless-http": "^2.7.0",
+    "sql": "^0.78.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "type": "module",
+  "name": "api"
+}
