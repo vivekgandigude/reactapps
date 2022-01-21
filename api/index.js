@@ -74,6 +74,7 @@ app.get("/olympicWinners", function (req, res) {
     res.json({ rows: rows, lastRow: lastRow });
   });
 });
-app.listen(port, () => {
-  console.log(`App running on port : ${port}.`);
-});
+// app.listen(port, () => {
+//   console.log(`App running on port : ${port}.`);
+// });
+export default app;

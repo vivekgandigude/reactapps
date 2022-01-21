@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "start": "node index.js",
-    "devStart": "nodemon index.js",
+    "start": "node local.js",
+    "devStart": "nodemon local.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "serverless deploy"
   },
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",

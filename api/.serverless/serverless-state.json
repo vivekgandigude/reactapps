@@ -7,6 +7,7 @@
     "provider": {
       "name": "aws",
       "runtime": "nodejs14.x",
+      "memorySize": 128,
       "stage": "dev",
       "region": "ap-south-1",
       "versionFunctions": true,
@@ -173,12 +174,12 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/api/dev/1642766662478-2022-01-21T12:04:22.478Z/api.zip"
+                "S3Key": "serverless/api/dev/1642769439800-2022-01-21T12:50:39.800Z/api.zip"
               },
-              "Handler": "handler.hello",
+              "Handler": "lamda.universal",
               "Runtime": "nodejs14.x",
               "FunctionName": "api-dev-app",
-              "MemorySize": 1024,
+              "MemorySize": 128,
               "Timeout": 6,
               "Role": {
                 "Fn::GetAtt": [
@@ -191,14 +192,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionE1R453hJDeEdK8g4RhqwwVP4QNDM3W5hrA5TOppw": {
+          "AppLambdaVersion6CMrMyZ5ew6GtLsVKedclId6ML0Wb8KLWjlv2XuDVU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "yV7gHElQXekDKzvi6cMvY07wdIZFZDBREOr7TQm7qrU="
+              "CodeSha256": "qfzPc3obMqAfqA3Gb+PAL1oKw4nxpfEZihqM2FThUa0="
             }
           },
           "ApiGatewayRestApi": {
@@ -416,7 +417,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1642766582460": {
+          "ApiGatewayDeployment1642769352768": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -481,7 +482,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionE1R453hJDeEdK8g4RhqwwVP4QNDM3W5hrA5TOppw"
+              "Ref": "AppLambdaVersion6CMrMyZ5ew6GtLsVKedclId6ML0Wb8KLWjlv2XuDVU"
             },
             "Export": {
               "Name": "sls-api-dev-AppLambdaFunctionQualifiedArn"
@@ -602,7 +603,7 @@
     "pluginsData": {},
     "functions": {
       "app": {
-        "handler": "handler.hello",
+        "handler": "lamda.universal",
         "events": [
           {
             "http": {
@@ -653,11 +654,11 @@
         ],
         "name": "api-dev-app",
         "package": {},
-        "memory": 1024,
+        "memory": 128,
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionE1R453hJDeEdK8g4RhqwwVP4QNDM3W5hrA5TOppw"
+        "versionLogicalId": "AppLambdaVersion6CMrMyZ5ew6GtLsVKedclId6ML0Wb8KLWjlv2XuDVU"
       }
     },
     "configValidationMode": "warn",
@@ -678,7 +679,7 @@
     "artifact": "C:\\Users\\Vikas\\readiness\\reactapps\\api\\.serverless\\api.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/api/dev/1642766662478-2022-01-21T12:04:22.478Z",
+    "artifactDirectoryName": "serverless/api/dev/1642769439800-2022-01-21T12:50:39.800Z",
     "artifact": "api.zip"
   }
 }
